@@ -22,7 +22,7 @@ public class ExpenseReport {
             File inFile = new File(fileName);
             Scanner fileScanner = new Scanner(inFile);
             while (fileScanner.hasNext()) {
-                dataRead.add(Integer.parseInt(fileScanner.nextLine()));
+                dataRead.add(fileScanner.nextInt());
             }
         }
         catch (FileNotFoundException e) {
